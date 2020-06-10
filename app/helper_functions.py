@@ -29,7 +29,7 @@ def allocate_data(driver):
                    'city': driver.city,
                    'district': driver.district,
                    'country': driver.country
-                  }
+                   }
     return driver_data
 
 

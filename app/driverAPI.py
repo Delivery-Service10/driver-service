@@ -35,7 +35,7 @@ def get_one_customer(public_id):
 def get_all_drivers():
 
     drivers = Driver.query.all()
-    return jsonify({'drivees': helper_functions.combine_results(drivers)})
+    return jsonify({'drivers': helper_functions.combine_results(drivers)})
 
 
 @driver_api.route('/driver/keyword/<keyword>/', methods=['GET'])
